@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11C4D74A18E2CE19001B60C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C4D74818E2CE19001B60C6 /* InfoPlist.strings */; };
+		11C4D75118E2CF0C001B60C6 /* vVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D75018E2CF0C001B60C6 /* vVoice.m */; };
+		11C4D75418E2CFCC001B60C6 /* IVVCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D75218E2CFAF001B60C6 /* IVVCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D75718E2D008001B60C6 /* IVVCodecDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D75618E2D008001B60C6 /* IVVCodecDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D75818E2D00A001B60C6 /* IVVCodecEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D75518E2CFF5001B60C6 /* IVVCodecEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D76518E2D1B3001B60C6 /* interf_dec.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D75D18E2D1B3001B60C6 /* interf_dec.h */; };
+		11C4D76618E2D1B3001B60C6 /* interf_enc.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D75E18E2D1B3001B60C6 /* interf_enc.h */; };
+		11C4D76718E2D1B3001B60C6 /* dec_if.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D76018E2D1B3001B60C6 /* dec_if.h */; };
+		11C4D76818E2D1B3001B60C6 /* if_rom.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D76118E2D1B3001B60C6 /* if_rom.h */; };
+		11C4D76918E2D1B3001B60C6 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C4D76318E2D1B3001B60C6 /* libopencore-amrnb.a */; };
+		11C4D76A18E2D1B3001B60C6 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C4D76418E2D1B3001B60C6 /* libopencore-amrwb.a */; };
+		11C4D76D18E2D1F8001B60C6 /* VVAMRCodecEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D76B18E2D1F8001B60C6 /* VVAMRCodecEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D76E18E2D1F8001B60C6 /* VVAMRCodecEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D76C18E2D1F8001B60C6 /* VVAMRCodecEncoder.m */; };
+		11C4D76F18E2D201001B60C6 /* vVoice.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D74F18E2CF0C001B60C6 /* vVoice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D77218E2D3EB001B60C6 /* VVAMRCodecDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D77018E2D3EB001B60C6 /* VVAMRCodecDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D77318E2D3EB001B60C6 /* VVAMRCodecDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D77118E2D3EB001B60C6 /* VVAMRCodecDecoder.m */; };
+		11C4D77518E2D5D0001B60C6 /* IVVCodecReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D77418E2D5CB001B60C6 /* IVVCodecReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D77718E2D604001B60C6 /* IVVCodecWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D77618E2D5ED001B60C6 /* IVVCodecWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D77A18E2D6AD001B60C6 /* VVAMRCodecReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D77818E2D6AD001B60C6 /* VVAMRCodecReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D77B18E2D6AD001B60C6 /* VVAMRCodecReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D77918E2D6AD001B60C6 /* VVAMRCodecReader.m */; };
+		11C4D77E18E2DA9C001B60C6 /* VVAMRCodecWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D77C18E2DA9C001B60C6 /* VVAMRCodecWriter.h */; };
+		11C4D77F18E2DA9C001B60C6 /* VVAMRCodecWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D77D18E2DA9C001B60C6 /* VVAMRCodecWriter.m */; };
+		11C4D78218E2DD36001B60C6 /* VVRecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D78018E2DD36001B60C6 /* VVRecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D78318E2DD36001B60C6 /* VVRecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D78118E2DD36001B60C6 /* VVRecoder.m */; };
+		11C4D78618E2DFA0001B60C6 /* VVPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D78418E2DFA0001B60C6 /* VVPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D78718E2DFA0001B60C6 /* VVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D78518E2DFA0001B60C6 /* VVPlayer.m */; };
+		11C4D79E18E2E65A001B60C6 /* config_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D78B18E2E65A001B60C6 /* config_types.h */; };
+		11C4D79F18E2E65A001B60C6 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D78C18E2E65A001B60C6 /* ogg.h */; };
+		11C4D7A018E2E65A001B60C6 /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D78D18E2E65A001B60C6 /* os_types.h */; };
+		11C4D7A118E2E65A001B60C6 /* speex.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D78F18E2E65A001B60C6 /* speex.h */; };
+		11C4D7A218E2E65A001B60C6 /* speex_bits.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D79018E2E65A001B60C6 /* speex_bits.h */; };
+		11C4D7A318E2E65A001B60C6 /* speex_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D79118E2E65A001B60C6 /* speex_buffer.h */; };
+		11C4D7A418E2E65A001B60C6 /* speex_callbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D79218E2E65A001B60C6 /* speex_callbacks.h */; };
+		11C4D7A518E2E65A001B60C6 /* speex_config_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D79318E2E65A001B60C6 /* speex_config_types.h */; };
+		11C4D7A618E2E65A001B60C6 /* speex_echo.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D79418E2E65A001B60C6 /* speex_echo.h */; };
+		11C4D7A718E2E65A001B60C6 /* speex_header.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D79518E2E65A001B60C6 /* speex_header.h */; };
+		11C4D7A818E2E65A001B60C6 /* speex_jitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D79618E2E65A001B60C6 /* speex_jitter.h */; };
+		11C4D7A918E2E65A001B60C6 /* speex_preprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D79718E2E65A001B60C6 /* speex_preprocess.h */; };
+		11C4D7AA18E2E65A001B60C6 /* speex_resampler.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D79818E2E65A001B60C6 /* speex_resampler.h */; };
+		11C4D7AB18E2E65A001B60C6 /* speex_stereo.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D79918E2E65A001B60C6 /* speex_stereo.h */; };
+		11C4D7AC18E2E65A001B60C6 /* speex_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D79A18E2E65A001B60C6 /* speex_types.h */; };
+		11C4D7AD18E2E65A001B60C6 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C4D79B18E2E65A001B60C6 /* libogg.a */; };
+		11C4D7AE18E2E65A001B60C6 /* libspeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C4D79C18E2E65A001B60C6 /* libspeex.a */; };
+		11C4D7AF18E2E65A001B60C6 /* libspeexdsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C4D79D18E2E65A001B60C6 /* libspeexdsp.a */; };
+		11C4D7B618E2E6B9001B60C6 /* VVSpeexCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D7B418E2E6B9001B60C6 /* VVSpeexCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C4D7B718E2E6B9001B60C6 /* VVSpeexCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D7B518E2E6B9001B60C6 /* VVSpeexCodec.m */; };
+		11C4D7BA18E2E919001B60C6 /* VVSpeexCodecWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D7B818E2E919001B60C6 /* VVSpeexCodecWriter.h */; };
+		11C4D7BB18E2E919001B60C6 /* VVSpeexCodecWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D7B918E2E919001B60C6 /* VVSpeexCodecWriter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11C4D74218E2CE19001B60C6 /* vVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vVoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C4D74718E2CE19001B60C6 /* vVoice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vVoice-Info.plist"; sourceTree = "<group>"; };
+		11C4D74918E2CE19001B60C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11C4D74B18E2CE19001B60C6 /* vVoice-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vVoice-Prefix.pch"; sourceTree = "<group>"; };
+		11C4D74F18E2CF0C001B60C6 /* vVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vVoice.h; sourceTree = "<group>"; };
+		11C4D75018E2CF0C001B60C6 /* vVoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vVoice.m; sourceTree = "<group>"; };
+		11C4D75218E2CFAF001B60C6 /* IVVCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCodec.h; sourceTree = "<group>"; };
+		11C4D75518E2CFF5001B60C6 /* IVVCodecEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCodecEncoder.h; sourceTree = "<group>"; };
+		11C4D75618E2D008001B60C6 /* IVVCodecDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCodecDecoder.h; sourceTree = "<group>"; };
+		11C4D75D18E2D1B3001B60C6 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		11C4D75E18E2D1B3001B60C6 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		11C4D76018E2D1B3001B60C6 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		11C4D76118E2D1B3001B60C6 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		11C4D76318E2D1B3001B60C6 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		11C4D76418E2D1B3001B60C6 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		11C4D76B18E2D1F8001B60C6 /* VVAMRCodecEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVAMRCodecEncoder.h; sourceTree = "<group>"; };
+		11C4D76C18E2D1F8001B60C6 /* VVAMRCodecEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVAMRCodecEncoder.m; sourceTree = "<group>"; };
+		11C4D77018E2D3EB001B60C6 /* VVAMRCodecDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVAMRCodecDecoder.h; sourceTree = "<group>"; };
+		11C4D77118E2D3EB001B60C6 /* VVAMRCodecDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVAMRCodecDecoder.m; sourceTree = "<group>"; };
+		11C4D77418E2D5CB001B60C6 /* IVVCodecReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCodecReader.h; sourceTree = "<group>"; };
+		11C4D77618E2D5ED001B60C6 /* IVVCodecWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCodecWriter.h; sourceTree = "<group>"; };
+		11C4D77818E2D6AD001B60C6 /* VVAMRCodecReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVAMRCodecReader.h; sourceTree = "<group>"; };
+		11C4D77918E2D6AD001B60C6 /* VVAMRCodecReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVAMRCodecReader.m; sourceTree = "<group>"; };
+		11C4D77C18E2DA9C001B60C6 /* VVAMRCodecWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVAMRCodecWriter.h; sourceTree = "<group>"; };
+		11C4D77D18E2DA9C001B60C6 /* VVAMRCodecWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVAMRCodecWriter.m; sourceTree = "<group>"; };
+		11C4D78018E2DD36001B60C6 /* VVRecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVRecoder.h; sourceTree = "<group>"; };
+		11C4D78118E2DD36001B60C6 /* VVRecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVRecoder.m; sourceTree = "<group>"; };
+		11C4D78418E2DFA0001B60C6 /* VVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVPlayer.h; sourceTree = "<group>"; };
+		11C4D78518E2DFA0001B60C6 /* VVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVPlayer.m; sourceTree = "<group>"; };
+		11C4D78B18E2E65A001B60C6 /* config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_types.h; sourceTree = "<group>"; };
+		11C4D78C18E2E65A001B60C6 /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg.h; sourceTree = "<group>"; };
+		11C4D78D18E2E65A001B60C6 /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os_types.h; sourceTree = "<group>"; };
+		11C4D78F18E2E65A001B60C6 /* speex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex.h; sourceTree = "<group>"; };
+		11C4D79018E2E65A001B60C6 /* speex_bits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_bits.h; sourceTree = "<group>"; };
+		11C4D79118E2E65A001B60C6 /* speex_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_buffer.h; sourceTree = "<group>"; };
+		11C4D79218E2E65A001B60C6 /* speex_callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_callbacks.h; sourceTree = "<group>"; };
+		11C4D79318E2E65A001B60C6 /* speex_config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_config_types.h; sourceTree = "<group>"; };
+		11C4D79418E2E65A001B60C6 /* speex_echo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_echo.h; sourceTree = "<group>"; };
+		11C4D79518E2E65A001B60C6 /* speex_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_header.h; sourceTree = "<group>"; };
+		11C4D79618E2E65A001B60C6 /* speex_jitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_jitter.h; sourceTree = "<group>"; };
+		11C4D79718E2E65A001B60C6 /* speex_preprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_preprocess.h; sourceTree = "<group>"; };
+		11C4D79818E2E65A001B60C6 /* speex_resampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_resampler.h; sourceTree = "<group>"; };
+		11C4D79918E2E65A001B60C6 /* speex_stereo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_stereo.h; sourceTree = "<group>"; };
+		11C4D79A18E2E65A001B60C6 /* speex_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_types.h; sourceTree = "<group>"; };
+		11C4D79B18E2E65A001B60C6 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libogg.a; sourceTree = "<group>"; };
+		11C4D79C18E2E65A001B60C6 /* libspeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspeex.a; sourceTree = "<group>"; };
+		11C4D79D18E2E65A001B60C6 /* libspeexdsp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspeexdsp.a; sourceTree = "<group>"; };
+		11C4D7B418E2E6B9001B60C6 /* VVSpeexCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSpeexCodec.h; sourceTree = "<group>"; };
+		11C4D7B518E2E6B9001B60C6 /* VVSpeexCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSpeexCodec.m; sourceTree = "<group>"; };
+		11C4D7B818E2E919001B60C6 /* VVSpeexCodecWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSpeexCodecWriter.h; sourceTree = "<group>"; };
+		11C4D7B918E2E919001B60C6 /* VVSpeexCodecWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSpeexCodecWriter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11C4D73F18E2CE19001B60C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C4D76A18E2D1B3001B60C6 /* libopencore-amrwb.a in Frameworks */,
+				11C4D7AE18E2E65A001B60C6 /* libspeex.a in Frameworks */,
+				11C4D7AD18E2E65A001B60C6 /* libogg.a in Frameworks */,
+				11C4D7AF18E2E65A001B60C6 /* libspeexdsp.a in Frameworks */,
+				11C4D76918E2D1B3001B60C6 /* libopencore-amrnb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11C4D70C18E2CDF0001B60C6 = {
+			isa = PBXGroup;
+			children = (
+				11C4D78818E2E65A001B60C6 /* speex */,
+				11C4D75A18E2D1B3001B60C6 /* opencore-amr-iOS */,
+				11C4D74518E2CE19001B60C6 /* vVoice */,
+				11C4D71718E2CDF0001B60C6 /* Frameworks */,
+				11C4D71618E2CDF0001B60C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11C4D71618E2CDF0001B60C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D74218E2CE19001B60C6 /* vVoice.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11C4D71718E2CDF0001B60C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11C4D74518E2CE19001B60C6 /* vVoice */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D74618E2CE19001B60C6 /* Supporting Files */,
+				11C4D74F18E2CF0C001B60C6 /* vVoice.h */,
+				11C4D75018E2CF0C001B60C6 /* vVoice.m */,
+				11C4D75218E2CFAF001B60C6 /* IVVCodec.h */,
+				11C4D75518E2CFF5001B60C6 /* IVVCodecEncoder.h */,
+				11C4D75618E2D008001B60C6 /* IVVCodecDecoder.h */,
+				11C4D76B18E2D1F8001B60C6 /* VVAMRCodecEncoder.h */,
+				11C4D76C18E2D1F8001B60C6 /* VVAMRCodecEncoder.m */,
+				11C4D77018E2D3EB001B60C6 /* VVAMRCodecDecoder.h */,
+				11C4D77118E2D3EB001B60C6 /* VVAMRCodecDecoder.m */,
+				11C4D77418E2D5CB001B60C6 /* IVVCodecReader.h */,
+				11C4D77618E2D5ED001B60C6 /* IVVCodecWriter.h */,
+				11C4D77818E2D6AD001B60C6 /* VVAMRCodecReader.h */,
+				11C4D77918E2D6AD001B60C6 /* VVAMRCodecReader.m */,
+				11C4D77C18E2DA9C001B60C6 /* VVAMRCodecWriter.h */,
+				11C4D77D18E2DA9C001B60C6 /* VVAMRCodecWriter.m */,
+				11C4D78018E2DD36001B60C6 /* VVRecoder.h */,
+				11C4D78118E2DD36001B60C6 /* VVRecoder.m */,
+				11C4D78418E2DFA0001B60C6 /* VVPlayer.h */,
+				11C4D78518E2DFA0001B60C6 /* VVPlayer.m */,
+				11C4D7B418E2E6B9001B60C6 /* VVSpeexCodec.h */,
+				11C4D7B518E2E6B9001B60C6 /* VVSpeexCodec.m */,
+				11C4D7B818E2E919001B60C6 /* VVSpeexCodecWriter.h */,
+				11C4D7B918E2E919001B60C6 /* VVSpeexCodecWriter.m */,
+			);
+			path = vVoice;
+			sourceTree = "<group>";
+		};
+		11C4D74618E2CE19001B60C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D74718E2CE19001B60C6 /* vVoice-Info.plist */,
+				11C4D74818E2CE19001B60C6 /* InfoPlist.strings */,
+				11C4D74B18E2CE19001B60C6 /* vVoice-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11C4D75A18E2D1B3001B60C6 /* opencore-amr-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D75B18E2D1B3001B60C6 /* include */,
+				11C4D76218E2D1B3001B60C6 /* lib */,
+			);
+			path = "opencore-amr-iOS";
+			sourceTree = "<group>";
+		};
+		11C4D75B18E2D1B3001B60C6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D75C18E2D1B3001B60C6 /* opencore-amrnb */,
+				11C4D75F18E2D1B3001B60C6 /* opencore-amrwb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		11C4D75C18E2D1B3001B60C6 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D75D18E2D1B3001B60C6 /* interf_dec.h */,
+				11C4D75E18E2D1B3001B60C6 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		11C4D75F18E2D1B3001B60C6 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D76018E2D1B3001B60C6 /* dec_if.h */,
+				11C4D76118E2D1B3001B60C6 /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		11C4D76218E2D1B3001B60C6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D76318E2D1B3001B60C6 /* libopencore-amrnb.a */,
+				11C4D76418E2D1B3001B60C6 /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		11C4D78818E2E65A001B60C6 /* speex */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D78918E2E65A001B60C6 /* include */,
+				11C4D79B18E2E65A001B60C6 /* libogg.a */,
+				11C4D79C18E2E65A001B60C6 /* libspeex.a */,
+				11C4D79D18E2E65A001B60C6 /* libspeexdsp.a */,
+			);
+			path = speex;
+			sourceTree = "<group>";
+		};
+		11C4D78918E2E65A001B60C6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D78A18E2E65A001B60C6 /* ogg */,
+				11C4D78E18E2E65A001B60C6 /* speex */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		11C4D78A18E2E65A001B60C6 /* ogg */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D78B18E2E65A001B60C6 /* config_types.h */,
+				11C4D78C18E2E65A001B60C6 /* ogg.h */,
+				11C4D78D18E2E65A001B60C6 /* os_types.h */,
+			);
+			path = ogg;
+			sourceTree = "<group>";
+		};
+		11C4D78E18E2E65A001B60C6 /* speex */ = {
+			isa = PBXGroup;
+			children = (
+				11C4D78F18E2E65A001B60C6 /* speex.h */,
+				11C4D79018E2E65A001B60C6 /* speex_bits.h */,
+				11C4D79118E2E65A001B60C6 /* speex_buffer.h */,
+				11C4D79218E2E65A001B60C6 /* speex_callbacks.h */,
+				11C4D79318E2E65A001B60C6 /* speex_config_types.h */,
+				11C4D79418E2E65A001B60C6 /* speex_echo.h */,
+				11C4D79518E2E65A001B60C6 /* speex_header.h */,
+				11C4D79618E2E65A001B60C6 /* speex_jitter.h */,
+				11C4D79718E2E65A001B60C6 /* speex_preprocess.h */,
+				11C4D79818E2E65A001B60C6 /* speex_resampler.h */,
+				11C4D79918E2E65A001B60C6 /* speex_stereo.h */,
+				11C4D79A18E2E65A001B60C6 /* speex_types.h */,
+			);
+			path = speex;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11C4D75318E2CFC7001B60C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C4D7AB18E2E65A001B60C6 /* speex_stereo.h in Headers */,
+				11C4D7A418E2E65A001B60C6 /* speex_callbacks.h in Headers */,
+				11C4D7AC18E2E65A001B60C6 /* speex_types.h in Headers */,
+				11C4D76718E2D1B3001B60C6 /* dec_if.h in Headers */,
+				11C4D77E18E2DA9C001B60C6 /* VVAMRCodecWriter.h in Headers */,
+				11C4D75818E2D00A001B60C6 /* IVVCodecEncoder.h in Headers */,
+				11C4D7AA18E2E65A001B60C6 /* speex_resampler.h in Headers */,
+				11C4D77718E2D604001B60C6 /* IVVCodecWriter.h in Headers */,
+				11C4D76618E2D1B3001B60C6 /* interf_enc.h in Headers */,
+				11C4D7A218E2E65A001B60C6 /* speex_bits.h in Headers */,
+				11C4D7A718E2E65A001B60C6 /* speex_header.h in Headers */,
+				11C4D76D18E2D1F8001B60C6 /* VVAMRCodecEncoder.h in Headers */,
+				11C4D7A118E2E65A001B60C6 /* speex.h in Headers */,
+				11C4D7A818E2E65A001B60C6 /* speex_jitter.h in Headers */,
+				11C4D79F18E2E65A001B60C6 /* ogg.h in Headers */,
+				11C4D76518E2D1B3001B60C6 /* interf_dec.h in Headers */,
+				11C4D7A318E2E65A001B60C6 /* speex_buffer.h in Headers */,
+				11C4D7BA18E2E919001B60C6 /* VVSpeexCodecWriter.h in Headers */,
+				11C4D77518E2D5D0001B60C6 /* IVVCodecReader.h in Headers */,
+				11C4D75718E2D008001B60C6 /* IVVCodecDecoder.h in Headers */,
+				11C4D78618E2DFA0001B60C6 /* VVPlayer.h in Headers */,
+				11C4D7A618E2E65A001B60C6 /* speex_echo.h in Headers */,
+				11C4D7A918E2E65A001B60C6 /* speex_preprocess.h in Headers */,
+				11C4D76818E2D1B3001B60C6 /* if_rom.h in Headers */,
+				11C4D7A518E2E65A001B60C6 /* speex_config_types.h in Headers */,
+				11C4D7B618E2E6B9001B60C6 /* VVSpeexCodec.h in Headers */,
+				11C4D77218E2D3EB001B60C6 /* VVAMRCodecDecoder.h in Headers */,
+				11C4D78218E2DD36001B60C6 /* VVRecoder.h in Headers */,
+				11C4D77A18E2D6AD001B60C6 /* VVAMRCodecReader.h in Headers */,
+				11C4D76F18E2D201001B60C6 /* vVoice.h in Headers */,
+				11C4D75418E2CFCC001B60C6 /* IVVCodec.h in Headers */,
+				11C4D79E18E2E65A001B60C6 /* config_types.h in Headers */,
+				11C4D7A018E2E65A001B60C6 /* os_types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		11C4D74118E2CE19001B60C6 /* vVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C4D74C18E2CE19001B60C6 /* Build configuration list for PBXNativeTarget "vVoice" */;
+			buildPhases = (
+				11C4D73E18E2CE19001B60C6 /* Sources */,
+				11C4D73F18E2CE19001B60C6 /* Frameworks */,
+				11C4D74018E2CE19001B60C6 /* Resources */,
+				11C4D75318E2CFC7001B60C6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vVoice;
+			productName = vVoice;
+			productReference = 11C4D74218E2CE19001B60C6 /* vVoice.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11C4D70D18E2CDF0001B60C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hailong.org;
+			};
+			buildConfigurationList = 11C4D71018E2CDF0001B60C6 /* Build configuration list for PBXProject "vVoice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 11C4D70C18E2CDF0001B60C6;
+			productRefGroup = 11C4D71618E2CDF0001B60C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11C4D74118E2CE19001B60C6 /* vVoice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11C4D74018E2CE19001B60C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C4D74A18E2CE19001B60C6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11C4D73E18E2CE19001B60C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C4D78718E2DFA0001B60C6 /* VVPlayer.m in Sources */,
+				11C4D76E18E2D1F8001B60C6 /* VVAMRCodecEncoder.m in Sources */,
+				11C4D77318E2D3EB001B60C6 /* VVAMRCodecDecoder.m in Sources */,
+				11C4D78318E2DD36001B60C6 /* VVRecoder.m in Sources */,
+				11C4D7B718E2E6B9001B60C6 /* VVSpeexCodec.m in Sources */,
+				11C4D77B18E2D6AD001B60C6 /* VVAMRCodecReader.m in Sources */,
+				11C4D7BB18E2E919001B60C6 /* VVSpeexCodecWriter.m in Sources */,
+				11C4D75118E2CF0C001B60C6 /* vVoice.m in Sources */,
+				11C4D77F18E2DA9C001B60C6 /* VVAMRCodecWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11C4D74818E2CE19001B60C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11C4D74918E2CE19001B60C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11C4D73618E2CDF0001B60C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11C4D73718E2CDF0001B60C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11C4D74D18E2CE19001B60C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "vVoice/vVoice-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = speex/include;
+				INFOPLIST_FILE = "vVoice/vVoice-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opencore-amr-iOS/lib",
+					"$(PROJECT_DIR)/speex",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		11C4D74E18E2CE19001B60C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "vVoice/vVoice-Prefix.pch";
+				HEADER_SEARCH_PATHS = speex/include;
+				INFOPLIST_FILE = "vVoice/vVoice-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opencore-amr-iOS/lib",
+					"$(PROJECT_DIR)/speex",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11C4D71018E2CDF0001B60C6 /* Build configuration list for PBXProject "vVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C4D73618E2CDF0001B60C6 /* Debug */,
+				11C4D73718E2CDF0001B60C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C4D74C18E2CE19001B60C6 /* Build configuration list for PBXNativeTarget "vVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C4D74D18E2CE19001B60C6 /* Debug */,
+				11C4D74E18E2CE19001B60C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11C4D70D18E2CDF0001B60C6 /* Project object */;
+}
