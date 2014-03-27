@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1197636718E3BD4B009C3FF0 /* VVSpeexCodecReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1197636518E3BD4B009C3FF0 /* VVSpeexCodecReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1197636818E3BD4B009C3FF0 /* VVSpeexCodecReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1197636618E3BD4B009C3FF0 /* VVSpeexCodecReader.m */; };
 		11C4D74A18E2CE19001B60C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C4D74818E2CE19001B60C6 /* InfoPlist.strings */; };
 		11C4D75118E2CF0C001B60C6 /* vVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D75018E2CF0C001B60C6 /* vVoice.m */; };
 		11C4D75418E2CFCC001B60C6 /* IVVCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D75218E2CFAF001B60C6 /* IVVCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,6 +60,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1197636518E3BD4B009C3FF0 /* VVSpeexCodecReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSpeexCodecReader.h; sourceTree = "<group>"; };
+		1197636618E3BD4B009C3FF0 /* VVSpeexCodecReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSpeexCodecReader.m; sourceTree = "<group>"; };
 		11C4D74218E2CE19001B60C6 /* vVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vVoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C4D74718E2CE19001B60C6 /* vVoice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vVoice-Info.plist"; sourceTree = "<group>"; };
 		11C4D74918E2CE19001B60C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 				11C4D7B518E2E6B9001B60C6 /* VVSpeexCodec.m */,
 				11C4D7B818E2E919001B60C6 /* VVSpeexCodecWriter.h */,
 				11C4D7B918E2E919001B60C6 /* VVSpeexCodecWriter.m */,
+				1197636518E3BD4B009C3FF0 /* VVSpeexCodecReader.h */,
+				1197636618E3BD4B009C3FF0 /* VVSpeexCodecReader.m */,
 			);
 			path = vVoice;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			files = (
 				11C4D7AB18E2E65A001B60C6 /* speex_stereo.h in Headers */,
 				11C4D7A418E2E65A001B60C6 /* speex_callbacks.h in Headers */,
+				1197636718E3BD4B009C3FF0 /* VVSpeexCodecReader.h in Headers */,
 				11C4D7AC18E2E65A001B60C6 /* speex_types.h in Headers */,
 				11C4D76718E2D1B3001B60C6 /* dec_if.h in Headers */,
 				11C4D77E18E2DA9C001B60C6 /* VVAMRCodecWriter.h in Headers */,
@@ -401,6 +408,7 @@
 				11C4D7B718E2E6B9001B60C6 /* VVSpeexCodec.m in Sources */,
 				11C4D77B18E2D6AD001B60C6 /* VVAMRCodecReader.m in Sources */,
 				11C4D7BB18E2E919001B60C6 /* VVSpeexCodecWriter.m in Sources */,
+				1197636818E3BD4B009C3FF0 /* VVSpeexCodecReader.m in Sources */,
 				11C4D75118E2CF0C001B60C6 /* vVoice.m in Sources */,
 				11C4D77F18E2DA9C001B60C6 /* VVAMRCodecWriter.m in Sources */,
 			);

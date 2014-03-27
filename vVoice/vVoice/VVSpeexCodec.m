@@ -152,7 +152,7 @@ static int VVSpeexBitSizes[] = {10,15,20,20,28,28,38,38,46,46};
 }
 
 
--(void) setQuality:(NSInteger)quality{
+-(void) setQuality:(int)quality{
     _quality = quality;
     if(_quality < 1){
         _quality = 1;
@@ -162,6 +162,11 @@ static int VVSpeexBitSizes[] = {10,15,20,20,28,28,38,38,46,46};
     }
     _encodeFrameBytes = VVSpeexBitSizes[_quality - 1];
     speex_encoder_ctl(_encodeState,SPEEX_SET_QUALITY,&_samplingRate);
+}
+
+-(void) setSamplingRate:(int) samplingRate{
+    speex_decoder_ctl(_decodeState, SPEEX_SET_SAMPLING_RATE, & samplingRate);
+    _samplingRate = samplingRate;
 }
 
 +(NSInteger) encodeFrameBytesWithQuality:(NSInteger) quality{

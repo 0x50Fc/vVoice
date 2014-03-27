@@ -27,4 +27,6 @@ typedef enum _VVSpeexCodecMode {
 
 +(NSInteger) encodeFrameBytesWithQuality:(NSInteger) quality;
 
+-(void) setSamplingRate:(int) samplingRate;
+
 @end
