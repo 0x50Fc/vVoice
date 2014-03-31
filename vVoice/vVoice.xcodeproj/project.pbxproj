@@ -29,7 +29,7 @@
 		11C4D77718E2D604001B60C6 /* IVVCodecWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D77618E2D5ED001B60C6 /* IVVCodecWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11C4D77A18E2D6AD001B60C6 /* VVAMRCodecReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D77818E2D6AD001B60C6 /* VVAMRCodecReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11C4D77B18E2D6AD001B60C6 /* VVAMRCodecReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D77918E2D6AD001B60C6 /* VVAMRCodecReader.m */; };
-		11C4D77E18E2DA9C001B60C6 /* VVAMRCodecWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D77C18E2DA9C001B60C6 /* VVAMRCodecWriter.h */; };
+		11C4D77E18E2DA9C001B60C6 /* VVAMRCodecWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D77C18E2DA9C001B60C6 /* VVAMRCodecWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11C4D77F18E2DA9C001B60C6 /* VVAMRCodecWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D77D18E2DA9C001B60C6 /* VVAMRCodecWriter.m */; };
 		11C4D78218E2DD36001B60C6 /* VVRecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D78018E2DD36001B60C6 /* VVRecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11C4D78318E2DD36001B60C6 /* VVRecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D78118E2DD36001B60C6 /* VVRecoder.m */; };
@@ -55,7 +55,7 @@
 		11C4D7AF18E2E65A001B60C6 /* libspeexdsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C4D79D18E2E65A001B60C6 /* libspeexdsp.a */; };
 		11C4D7B618E2E6B9001B60C6 /* VVSpeexCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D7B418E2E6B9001B60C6 /* VVSpeexCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11C4D7B718E2E6B9001B60C6 /* VVSpeexCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D7B518E2E6B9001B60C6 /* VVSpeexCodec.m */; };
-		11C4D7BA18E2E919001B60C6 /* VVSpeexCodecWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D7B818E2E919001B60C6 /* VVSpeexCodecWriter.h */; };
+		11C4D7BA18E2E919001B60C6 /* VVSpeexCodecWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C4D7B818E2E919001B60C6 /* VVSpeexCodecWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11C4D7BB18E2E919001B60C6 /* VVSpeexCodecWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4D7B918E2E919001B60C6 /* VVSpeexCodecWriter.m */; };
 /* End PBXBuildFile section */
 
