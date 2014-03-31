@@ -8,3 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#import <vVoice/VVAMRCodecEncoder.h>
+#import <vVoice/VVAMRCodecDecoder.h>
+#import <vVoice/VVAMRCodecReader.h>
+#import <vVoice/VVAMRCodecWriter.h>
+
+#import <vVoice/VVSpeexCodec.h>
+#import <vVoice/VVSpeexCodecWriter.h>
+#import <vVoice/VVSpeexCodecReader.h>
