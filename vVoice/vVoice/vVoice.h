@@ -16,3 +16,6 @@
 #import <vVoice/VVSpeexCodec.h>
 #import <vVoice/VVSpeexCodecWriter.h>
 #import <vVoice/VVSpeexCodecReader.h>
+
+#import <vVoice/VVPlayer.h>
+#import <vVoice/VVRecoder.h>
