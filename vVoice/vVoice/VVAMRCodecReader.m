@@ -21,6 +21,7 @@
     FILE * _fd;
     unsigned char _stdFrameHeader;
     int _stdFrameSize;
+    unsigned char * _ebuf;
 }
 
 @end
@@ -33,6 +34,10 @@
     
     if(_fd){
         fclose(_fd);
+    }
+    
+    if(_ebuf){
+        free(_ebuf);
     }
     
     [_decoder release];
@@ -57,6 +62,8 @@
             [self release];
             return nil;
         }
+        
+        magic[AMR_MAGIC_NUMBER_LENGTH] = 0;
         
         if(strncmp(magic, AMR_MAGIC_NUMBER, sizeof(magic)) != 0){
             [self release];
@@ -101,9 +108,7 @@ static int caclAMRFrameSize(unsigned char frameHeader)
 }
 
 -(BOOL) readToBytes:(void *) outBytes{
-    
-    unsigned char * up = (unsigned char *) outBytes;
-    
+  
     int frameBytes = [_decoder frameBytes];
     
     memset(outBytes, 0, frameBytes);
@@ -120,13 +125,20 @@ static int caclAMRFrameSize(unsigned char frameHeader)
             return NO;
         }
         
-        * up = _stdFrameHeader;
+        if (_ebuf == NULL) {
+            _ebuf = malloc(_stdFrameSize);
+        }
         
-        if(_stdFrameSize -1 != fread(up + 1, 1, (_stdFrameSize - 1), _fd)){
+        memset(_ebuf, 0, _stdFrameSize);
+        
+        * _ebuf = _stdFrameHeader;
+        
+        if(_stdFrameSize -1 != fread(_ebuf + 1, 1, (_stdFrameSize - 1), _fd)){
             return NO;
         }
         
-        return YES;
+        return [_decoder decode:_ebuf length:_stdFrameSize to:outBytes];
+        
     }
     else {
         
@@ -137,7 +149,7 @@ static int caclAMRFrameSize(unsigned char frameHeader)
         while(1)
         {
             if(1 == fread(&frameHeader, 1, sizeof(unsigned char), _fd)){
-                if(frameHeader == _stdFrameSize){
+                if(frameHeader == _stdFrameHeader){
                     break;
                 }
             }
@@ -146,12 +158,13 @@ static int caclAMRFrameSize(unsigned char frameHeader)
             }
         }
         
-        * up = frameHeader;
+        * _ebuf = frameHeader;
         
-        if(_stdFrameSize -1 != fread(up + 1, 1, (_stdFrameSize - 1), _fd)){
+        if(_stdFrameSize -1 != fread( _ebuf + 1, 1, (_stdFrameSize - 1), _fd)){
             return NO;
         }
-        return YES;
+        
+        return [_decoder decode:_ebuf length:_stdFrameSize to:outBytes];;
     }
 }
 
